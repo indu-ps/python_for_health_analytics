@@ -1,0 +1,44 @@
+class Patient:
+    def __init__(self, name, age, gender, blood_pressure, temperature):
+        self.name = name
+        self.age = age
+        self.gender = gender
+        self.blood_pressure = blood_pressure
+        self.temperature = temperature
+
+    def display_patient_info(self):
+        print("Patient Information:")
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+        print(f"Gender: {self.gender}")
+        print(f"Blood Pressure: {self.blood_pressure[0]}/{self.blood_pressure[1]}")
+        print(f"Temperature: {self.temperature}°C")
+
+    def is_hypertensive(self):
+        if self.blood_pressure[0] >= 140 or self.blood_pressure[1] >= 90:
+            return True
+        return False
+
+    def is_feverish(self):
+        if self.temperature >= 37.5:
+            return True
+        return False
+
+
+# Creating two instances of the Patient class
+patient1 = Patient("John Doe", 45, "Male", (140, 85), 36.8)
+patient2 = Patient("Jane Smith", 32, "Female", (130, 88), 37.6)
+
+# Displaying patient information
+print("Patient 1:")
+patient1.display_patient_info()
+print("\nPatient 2:")
+patient2.display_patient_info()
+
+# Checking for hypertension
+print("\nPatient 1 is hypertensive:", patient1.is_hypertensive())
+print("Patient 2 is hypertensive:", patient2.is_hypertensive())
+
+# Checking for fever
+print("\nPatient 1 is feverish:", patient1.is_feverish())
+print("Patient 2 is feverish:", patient2.is_feverish())
