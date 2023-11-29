@@ -149,7 +149,7 @@ logistic_regression_results(log_reg2.coef_[0][0],2)
 # In[ ]:
 
 
-print("Interpretation: Based on the data analysis and logistic regression results, Hospital 2 has a slightly higher satisfaction ratings for each category but a slightly stronger correlation between overall satisfaction scores and readmission rates compared to Hospital 2. However, the readmission rates for both hospitals are overall low and this means that they are performing well."
+print("Interpretation: Based on the data analysis and logistic regression results, Hospital 2 has a slightly higher satisfaction ratings for each category but a slightly stronger correlation between overall satisfaction scores and readmission rates compared to Hospital 2. However, the readmission rates for both hospitals are overall low and this means that they are performing well.")
 
  
 
